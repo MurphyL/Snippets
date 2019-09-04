@@ -1,4 +1,4 @@
-## Beeline
+== Beeline
 
 [source, shell]
 .beeline_test.sh
@@ -6,7 +6,7 @@
 ./beeline jdbc:hive2://127.0.0.1:10000/default;
 ----
 
-## 运维
+== 运维
 
 [source, shell]
 .kill_hive_processes.sh

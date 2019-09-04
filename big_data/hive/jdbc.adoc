@@ -1,4 +1,4 @@
-## JDBC连接串
+== JDBC连接串
 [source, text]
 .raw_jdbc_url.txt
 ----
@@ -11,7 +11,7 @@ jdbc:hive2://<host1>:<port1>,<host2>:<port2>/dbName;
 jdbc:hive2://<quorum>/dbName;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=namespace;
 ----
 
-## JDBC参数
+== JDBC参数
 
 [source, text]
 .zookeeper_jdbc_url.txt

@@ -1,4 +1,4 @@
-## 行专列
+== 行专列
 [source, sql]
 .column_to_row.sql
 ----

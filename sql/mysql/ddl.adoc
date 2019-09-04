@@ -1,5 +1,5 @@
-## 数据的插入
-### insert ignore与insert into的区别在于：
+== 数据的插入
+=== insert ignore与insert into的区别在于：
 [NOTE]
 ====
 insert ignore会忽略数据库中已经存在的数据，如果数据库没有数据，就插入新的数据，如果有数据的话就跳过这条数据；

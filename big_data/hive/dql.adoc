@@ -1,11 +1,11 @@
-## 行专列
+== 行专列
 [source, sql]
 .row_to_column.sql
 ----
 SELECT explode(split('武汉,黄石,孝感', ','))
 ----
 
-## 行专列
+== 行专列
 [source, sql]
 .column_to_row.sql
 ----
@@ -13,7 +13,7 @@ SELECT group_concat('test_column')
 ----
 
 
-## 分组取TopN
+== 分组取TopN
 
 [source, sql]
 .group_top_n.sql

@@ -1,6 +1,6 @@
-## 创建函数
+== 创建函数
 
-### SQL设置
+=== SQL设置
 [source, sql]
 .create_function.sql
 ----
@@ -31,7 +31,7 @@ END //
 SELECT get_path('0250020197') ;
 ----
 
-### 通过JDBC创建
+=== 通过JDBC创建
 
 [source, sql]
 .create_function_via_jdbc.sql

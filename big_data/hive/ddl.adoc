@@ -1,4 +1,4 @@
-## 导入数据到Hive
+== 导入数据到Hive
 
 [source, sql]
 .load_local_data_to_hive.sql
@@ -14,7 +14,7 @@ LOAD DATA LOCAL INPATH '/home/csv_file.csv' OVERWRITE INTO TABLE csv_test_table;
 LOAD DATA INPATH '/test/test_data.json' OVERWRITE INTO TABLE json_test_table;
 ----
 
-## 分区操作
+== 分区操作
 
 [source, sql]
 .show_partitions.sql

@@ -1,5 +1,4 @@
-
-## 微信小程序 - 解密数据
+== 微信小程序 - 解密数据
 
 [source, java]
 .WechatUtils.java

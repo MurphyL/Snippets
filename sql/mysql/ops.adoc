@@ -1,5 +1,5 @@
-## 事务隔离机制
-### Java代码设置
+== 事务隔离机制
+=== Java代码设置
 
 [source, java]
 .MySqlJdbc.java
@@ -12,7 +12,7 @@ public class MySqlJdbc {
 }
 ----
 
-### SQL设置
+=== SQL设置
 [source, sql]
 .change_transaction_isolation_level.sql
 ----
