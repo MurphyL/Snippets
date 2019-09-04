@@ -1,0 +1,44 @@
+== HDFS运维
+
+[source, shell]
+.stop_hdfs.sh
+----
+# 停止HDFS服务
+$HADOOP_HOME/sbin/stop-dfs.sh
+----
+
+[source, shell]
+.start_hdfs.sh
+----
+# 启动HDFS服务
+$HADOOP_HOME/sbin/start-dfs.sh
+----
+
+== 集群管理
+
+=== 报告
+
+[source, shell]
+.hdfs_report.sh
+----
+hdfs dfsadmin -report
+----
+
+=== 安全模式
+
+[source, shell]
+.hdfs_safe_mode.sh
+----
+hdfs dfsadmin -safemode enter
+----
+
+==== 更多操作
+
+[NOTE]
+====
+- enter：进入安全模式；
+- leave：离开安全模式；
+- get：获知是否开启安全模式；
+- wait：等待离开安全模式
+====
+
