@@ -1,0 +1,21 @@
+## 导入数据到Hive
+
+[source, sql]
+.load_data_to_hive.sql
+----
+-- 导入本地数据
+LOAD DATA LOCAL INPATH '/home/csv_file.csv' OVERWRITE INTO TABLE csv_test_table;
+-- 导入HDFS数据
+LOAD DATA INPATH '/test/test_data.json' OVERWRITE INTO TABLE json_test_table;
+----
+
+## 分区操作
+
+[source, sql]
+.partitions.sql
+----
+-- 列出所有分区
+SHOW PARTITIONS table_name;
+-- 删除分区
+ALTER TABLE test_table DROP IF EXISTS PARTITION(dt = 20171225);
+----

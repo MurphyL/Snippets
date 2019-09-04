@@ -1,4 +1,5 @@
-# 微信小程序接入加解密
+
+## 微信小程序 - 解密数据
 
 [source, java]
 .WechatUtils.java
@@ -35,6 +36,5 @@ public class WechatUtils {
             return null;
         }
     }
-
 }
 ----

@@ -1,0 +1,22 @@
+## 运维
+
+[source, shell]
+.hive_ops.sh
+----
+./beeline jdbc:hive2://127.0.0.1:10000/default;
+----
+
+## Beeline
+
+[source, shell]
+.beeline_test.sh
+----
+# 杀掉Hive相关进程
+jps | grep RunJar | awk '{print $1}' | xargs kill -9
+
+# 启动Hive MetaStore
+nohup $HIVE_HOME/bin/hive --service metastore > /dev/null 2>&1 &
+
+# 启动HiveServer2
+nohup $HIVE_HOME/bin/hive --service hiveserver2 > /dev/null 2>&1 &
+----
