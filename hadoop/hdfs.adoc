@@ -1,11 +1,15 @@
 ## HDFS运维
 
 [source, shell]
-.hdfs_ops.sh
+.stop_hdfs.sh
 ----
 # 停止HDFS服务
 $HADOOP_HOME/sbin/stop-dfs.sh
+----
 
+[source, shell]
+.start_hdfs.sh
+----
 # 启动HDFS服务
 $HADOOP_HOME/sbin/start-dfs.sh
 ----
