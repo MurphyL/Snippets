@@ -7,8 +7,9 @@
 
 ## 代码目录规划
 
-* spring
-* web
-* wechat
+* big_data
+* database
+* java
+* social
 
 ## 名词解释
