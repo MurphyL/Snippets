@@ -1,0 +1,9 @@
+== 用户组管理
+
+[source,shell]
+.user_group.sh
+----
+groupadd supergroup
+useradd -g supergroup hive
+passwd hive
+----

@@ -28,3 +28,11 @@ nohup $HIVE_HOME/bin/hive --service metastore > /dev/null 2>&1 &
 # 启动HiveServer2
 nohup $HIVE_HOME/bin/hive --service hiveserver2 > /dev/null 2>&1 &
 ----
+
+== 初始化元数据
+
+[source, shell]
+.schema_init.sh
+----
+$HIVE_HOME/bin/schematool -initSchema -dbType mysql
+----
