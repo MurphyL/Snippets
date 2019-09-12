@@ -1,0 +1,7 @@
+=== 启用Profile
+
+[source,shell]
+.spring_redis_template.sh
+----
+-Dspring.profiles.active=dev
+----

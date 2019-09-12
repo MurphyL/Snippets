@@ -1,0 +1,7 @@
+=== Content Type
+
+[source,text]
+.spring_mvc_mapping.txt
+----
+@GetMapping(value = "qrcode", produces = "image/jpeg")
+----
