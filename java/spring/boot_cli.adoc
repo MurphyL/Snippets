@@ -13,3 +13,7 @@
 ----
 @EnableAutoConfiguration(exclude={ClassNotToAutoconfigure.class})
 ----
+
+有关自动配置的官方文档可在此处找到：
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-auto-configuration.html
