@@ -5,3 +5,11 @@
 ----
 -Dspring.profiles.active=dev
 ----
+
+=== 紧用自动配置
+
+[source,shell]
+.disable_autoconfig.java
+----
+@EnableAutoConfiguration(exclude={ClassNotToAutoconfigure.class})
+----
