@@ -1,7 +1,15 @@
 === 启用Profile
 
 [source,shell]
-.spring_redis_template.sh
+.spring-profiles.sh
 ----
 -Dspring.profiles.active=dev
+----
+
+=== 内嵌服务器的配置
+
+[source,shell]
+.embedded-server-config.sh
+----
+--server.port=9090
 ----
