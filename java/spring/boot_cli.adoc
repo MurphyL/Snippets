@@ -13,3 +13,16 @@
 ----
 --server.port=9090
 ----
+
+=== 禁用自动配置
+
+[source,shell]
+.disable_autoconfig.java
+----
+@EnableAutoConfiguration(exclude={ClassNotToAutoconfigure.class})
+@SpringBootApplication(exclude={ClassNotToAutoconfigure.class})
+----
+
+有关自动配置的官方文档可在此处找到：
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-auto-configuration.html
