@@ -1,27 +1,10 @@
-# 配置中心接入文档 - v0.5
-
-
-
-## 必要信息
-
-**配置中心地址**：[http://172.16.163.77:9070](http://172.16.163.77:9070/)，新增，修改配置使用这个页面（如何操作看这里TODO）。
-
-**配置中心Meta Server：**
-
-| 环境  | 地址                                                      | 备注      |
-| ----- | --------------------------------------------------------- | --------- |
-| LOCAL | [http://172.16.163.72:8080](http://172.16.163.72:8080/)   | 本地环境  |
-| DEV   | [http://172.16.163.71:8080](http://172.16.163.71:8080/)   | 开发环境  |
-| QASA  | [http://172.16.163.77:9080](http://172.16.163.77:9080/)   | 测试环境A |
-| QASB  | [http://172.16.162.193:9080](http://172.16.162.193:9080/) | 测试环境B |
-
 ## 如何接入
 
 ### 1. 引入Maven依赖：
 
 在`pom.xml`文件中新增如下依赖：
 
-```java
+```xml
 <dependency>
     <groupId>com.ctrip.framework.apollo</groupId>
     <artifactId>apollo-client</artifactId>
@@ -159,3 +142,5 @@ private int timeout;
 #### 切换配置环境、集群：
 
 在`C:/opt/settings/server.properties`文件中可以指定配置中心的`apollo.meta`和`apollo.cluster`来达到切换环境和集群的目的。
+
+> /opt/settings/server.properties
