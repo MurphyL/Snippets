@@ -1,0 +1,21 @@
+== PostgreSQL
+
+[NOTE]
+====
+关系型数据库，支持窗口函数，JSON处理。
+====
+
+=== 安装
+
+[source, shell]
+.docker_install_postgres.sh
+----
+# 安装PostgreSQL
+docker pull postgres
+
+# 运行
+docker run --name postgres1 -e POSTGRES_PASSWORD=password -p 54321:5432 -d postgres
+
+# 客户端访问
+psql -U postgres -h 192.168.100.172 -p 54321
+----
