@@ -19,3 +19,7 @@ docker run --name postgres1 -e POSTGRES_PASSWORD=password -p 54321:5432 -d postg
 # 客户端访问
 psql -U postgres -h 192.168.100.172 -p 54321
 ----
+
+=== 其他
+
+* 客户端开发工具 - https://www.postgresql.org/ftp/pgadmin/[pgAdmin]
