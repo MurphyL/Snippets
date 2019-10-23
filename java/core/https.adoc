@@ -1,0 +1,22 @@
+=== 解决绿色版JDK访问HTTPS的问题
+
+=== trustAnchors parameter must be non-empty
+[source,shell]
+.request_https_error.sh
+----
+sudo apt-get install ca-certificates-java
+# 变量
+export java_cacerts=/etc/ssl/certs/java/cacerts
+# 一次处理
+java -jar -Djavax.net.ssl.trustStore=$java_cacerts smart-platform-wechat.jar
+# 永久处理
+sudo ln -s $java_cacerts $JAVA_HOME/jre/lib/security/cacerts
+----
+
+=== Received fatal alert protocol_version
+
+[source,shell]
+.request_https_error.sh
+----
+-Dhttps.protocols=TLSv1.2 -Duser.timezone=GMT+08
+----
