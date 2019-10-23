@@ -62,13 +62,13 @@ mkdir -p /data/hadoop/tmp /data/hadoop/hdfs/namenode /data/hadoop/hdfs/datanode
 chown -R hive:supergroup /data/hadoop/tmp
 chown -R hive:supergroup /data/hadoop/hdfs
 
-su hive			# 以下操作尽量需要在hive用户下完成，Hadoop的权限管理一定程度上依赖了系统用户的权限
+su hive     # 以下操作尽量需要在hive用户下完成，Hadoop的权限管理一定程度上依赖了系统用户的权限
 
 # 安装Hadoop
 rz hadoop.tar.gz
 tar -zxvf hadoop.tar.gz
 cd hadoop-2.9.2
-pwd 			# /home/hive/backup/hadoop-2.9.2
+pwd         # /home/hive/backup/hadoop-2.9.2
 
 # 配置环境变量
 vi ~/.bashrc	# 按照下文设置环境变量
@@ -109,7 +109,7 @@ vi $HADOOP_HOME/etc/hadoop/core-site.xml
 > 修改`hadoop.proxyuser`开头的配置为：
 
 ```xml
-	<!-- 若系统创建的缓存目录为/data/hadoop/tmp -->
+    <!-- 若系统创建的缓存目录为/data/hadoop/tmp -->
     <property>
         <name>hadoop.tmp.dir</name>
         <value>/data/hadoop/tmp</value>
@@ -190,9 +190,9 @@ mkdir ~/logs
 rz hive.tar.gz
 tar -zxvf hive.tar.gz
 cd apache-hive-3.1.1-bin
-pwd 				# /home/hive/backup/apache-hive-3.1.1-bin
+pwd         # /home/hive/backup/apache-hive-3.1.1-bin
 # 配置环境变量
-vi ~/.bashrc		# 按照下文设置环境变量
+vi ~/.bashrc        # 按照下文设置环境变量
 source ~/.bashrc
 ```
 
@@ -213,23 +213,23 @@ vi $HIVE_HOME/conf/hive-site.xml
 ```
 
 ```xml
-	<!-- Zookeeper HiveServer2的namespace -->
+    <!-- Zookeeper HiveServer2的namespace -->
     <property>
         <name>hive.server2.zookeeper.namespace</name>
         <value>data_supply_hive</value>
     </property>
-	<!-- Zookeeper协调服务连接串，多个以英文逗号分割 -->
+    <!-- Zookeeper协调服务连接串，多个以英文逗号分割 -->
     <property>
         <name>hive.zookeeper.quorum</name>
         <value>zk_node1:2181,zk_node2:2181</value>
     </property>
-	<!-- Zookeeper协调服务连接串，多个以英文逗号分割 -->
+    <!-- Zookeeper协调服务连接串，多个以英文逗号分割 -->
     <property>
         <name>hive.zookeeper.client.port</name>
         <value>2181</value>
     </property>
     <!-- meta store 配置 -->
-	<!-- meta store配置，主节点要注释该配置，子节点要启用该配置 -->
+    <!-- meta store配置，主节点要注释该配置，子节点要启用该配置 -->
     <!--
     <property>  
         <name>hive.metastore.uris</name>  
@@ -241,22 +241,22 @@ vi $HIVE_HOME/conf/hive-site.xml
         <value>10001</value>
     </property>
     <!-- 元数据存储数据库配置 -->
-	<!-- MySQL JDBC连接串 -->
+    <!-- MySQL JDBC连接串 -->
     <property>
         <name>javax.jdo.option.ConnectionURL</name>
         <value>jdbc:mysql://192.168.10.40:3306/hive_dev?createDatabaseIfNotExist=true&amp;useSSL=true</value>
     </property>
-	<!-- MySQL JDBC Driver -->
+    <!-- MySQL JDBC Driver -->
     <property>
         <name>javax.jdo.option.ConnectionDriverName</name>
         <value>com.mysql.jdbc.Driver</value>
     </property>
-	<!-- MySQL User -->
+    <!-- MySQL User -->
     <property>
         <name>javax.jdo.option.ConnectionUserName</name>
         <value>hive</value>
     </property>
-	<!-- MySQL Password -->
+    <!-- MySQL Password -->
     <property>
         <name>javax.jdo.option.ConnectionPassword</name>
         <value>hive</value>
@@ -266,8 +266,8 @@ vi $HIVE_HOME/conf/hive-site.xml
 ##### 子节点配置
 
 ```xml
-	<!-- 除如下配置，其他配置均与主节点保持一致 -->
-	<!-- meta store配置，主节点要注释该配置，子节点要启用该配置 -->
+    <!-- 除如下配置，其他配置均与主节点保持一致 -->
+    <!-- meta store配置，主节点要注释该配置，子节点要启用该配置 -->
     <property>  
         <name>hive.metastore.uris</name>  
         <value>thrift://hadoop2:9083</value>  
@@ -285,13 +285,13 @@ $HIVE_HOME/bin/schematool -initSchema -dbType mysql
 
 ```sql
 ALTER TABLE `columns_v2`
-	CHANGE COLUMN `COMMENT` `COMMENT` VARCHAR(256) NULL DEFAULT NULL COLLATE 'ucs2_general_ci';
+    CHANGE COLUMN `COMMENT` `COMMENT` VARCHAR(256) NULL DEFAULT NULL COLLATE 'ucs2_general_ci';
 
 ALTER TABLE `table_params`
-	CHANGE COLUMN `PARAM_VALUE` `PARAM_VALUE` MEDIUMTEXT NULL COLLATE 'utf8_general_ci';
+    CHANGE COLUMN `PARAM_VALUE` `PARAM_VALUE` MEDIUMTEXT NULL COLLATE 'utf8_general_ci';
 
 ALTER TABLE `partition_keys`
-	CHANGE COLUMN `PKEY_COMMENT` `PKEY_COMMENT` VARCHAR(4000) NULL DEFAULT NULL COLLATE 'utf8_general_ci';
+    CHANGE COLUMN `PKEY_COMMENT` `PKEY_COMMENT` VARCHAR(4000) NULL DEFAULT NULL COLLATE 'utf8_general_ci';
 ```
 
 #### 验证、启动

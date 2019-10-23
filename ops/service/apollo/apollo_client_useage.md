@@ -81,7 +81,7 @@ apollo.meta=http://172.16.163.72:8080
 // 在配置类上新增`@EnableApolloConfig`注解既可。
 @EnableApolloConfig
 public class AppConfig {
-	// do something...
+    // do something...
 }
 
 @Configuration
@@ -120,8 +120,8 @@ apollo.bootstrap.namespaces = application, dev.plugin
 ```xml
 <bean class="com.chtwm.datasupply.TestBean">
     <!-- timeout是参数名称，100是默认值 -->
-	<property name="timeout" value="${timeout:100}"/>
-	<property name="batch" value="${batch:200}"/>
+    <property name="timeout" value="${timeout:100}"/>
+    <property name="batch" value="${batch:200}"/>
 </bean>
 ```
 
@@ -141,6 +141,5 @@ private int timeout;
 
 #### 切换配置环境、集群：
 
-在`C:/opt/settings/server.properties`文件中可以指定配置中心的`apollo.meta`和`apollo.cluster`来达到切换环境和集群的目的。
+在`/opt/settings/server.properties`文件中可以指定配置中心的`apollo.meta`和`apollo.cluster`来达到切换环境和集群的目的。
 
-> /opt/settings/server.properties
