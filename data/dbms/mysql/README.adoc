@@ -1,0 +1,4 @@
+
+=== 其他
+
+* 客户端开发工具 - https://www.heidisql.com/download.php?download=portable-64[HeidiSQL]

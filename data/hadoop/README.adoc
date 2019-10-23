@@ -1,0 +1,5 @@
+== Apache Hadoop
+
+* HDFS：分布式分解系统
+* YARN：任务调度模块
+* Hive：SQL解析执行引擎
