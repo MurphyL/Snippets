@@ -1,9 +1,6 @@
 == Zeppelin
 
-[NOTE]
-====
 Apache Zeppelin 是一个让交互式数据分析变得可行的基于网页的notebook。Zeppelin提供了数据可视化的框架。
-====
 
 === 语言、技术支持
 

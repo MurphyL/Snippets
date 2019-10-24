@@ -107,7 +107,8 @@ LATERAL VIEW explode(adid_list) adid_table AS adid
 |5
 |d
 
-
 |===
 
-https://cwiki.apache.org/confluence/display/Hive/LanguageManual+LateralView
+=== 参考文档
+
+* Hive用户手册 - https://cwiki.apache.org/confluence/display/Hive/LanguageManual+LateralView[Lateral View]
