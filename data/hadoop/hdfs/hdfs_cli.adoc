@@ -1,6 +1,6 @@
 == HDFS运维
-[source, text]
-.fs_demo.text
+[source, shell]
+.fs_demo.sh
 ----
 # 停止HDFS服务
 hadoop fs -cmd args
