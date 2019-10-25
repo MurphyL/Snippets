@@ -2,30 +2,75 @@
 
 === 常见的包管理器
 
-==== apt
+|===
+|
+| apt/dpkg 
+| yum/dnf 
+| pacman
 
-```sh
-apt upgrade
-apt update
-apt install package
-apt remove package
-```
+| Distributions
+| Debian, Ubuntu
+| Fedora, CentOS
+| Arch, Manjaro
 
-==== dpkg
+| Update system
+| apt-get upgrade
+| yum update
+| pacman -Su
 
-==== yum
-```sh
-yum install package
-yum remove package
-```
+| Update system
+| apt-get upgrade
+| yum update
+| pacman -Su
 
-==== dnf
+| Install new software from package repository
+| apt-get install pkg
+| yum install pkg
+| pacman -S pkg
 
-==== yum
-```sh
-dnf install package
-dnf remove package
-```
+| Install new software from package file
+| dpkg -i pkg
+| yum localinstall pkg
+| pacman -U pkg
+
+| Update existing software
+| apt-get install pkg
+| yum update pkg
+| pacman -S pkg
+
+| Remove unwanted software
+| apt-get remove pkg
+| yum erase pkg
+| pacman -R pkg
+
+| Update package list
+| apt-get update
+| yum check-update
+| pacman -Sy
+
+| List installed packages
+| dpkg -l
+| rpm -qa
+| pacman -Q
+
+| List repositories
+| cat /etc/apt/sources.list
+| yum repolist
+| cat /etc/pacman.conf
+
+| Add repository
+| edit /etc/apt/sources.list
+| add repo to /etc/yum.repos.d/
+| edit /etc/pacman.conf
+
+| Remove repository
+| edit /etc/apt/sources.list
+| remove repo from /etc/yum.repos.d/
+| edit /etc/pacman.conf
+
+|===
+
+
 
 
 === 其他
