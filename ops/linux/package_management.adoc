@@ -1,0 +1,33 @@
+== 软件包的管理
+
+=== 常见的包管理器
+
+==== apt
+
+```sh
+apt upgrade
+apt update
+apt install package
+apt remove package
+```
+
+==== dpkg
+
+==== yum
+```sh
+yum install package
+yum remove package
+```
+
+==== dnf
+
+==== yum
+```sh
+dnf install package
+dnf remove package
+```
+
+
+=== 其他
+
+* https://distrowatch.com/dwres.php?resource=package-management[Package Management Cheatsheet]
