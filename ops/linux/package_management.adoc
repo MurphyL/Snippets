@@ -3,10 +3,7 @@
 === 常见的包管理器
 
 |===
-|
-| apt/dpkg 
-| yum/dnf 
-| pacman
+| | apt/dpkg | yum/dnf | pacman
 
 | Distributions
 | Debian, Ubuntu
