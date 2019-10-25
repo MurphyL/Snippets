@@ -5,62 +5,57 @@
 |===
 | | apt/dpkg | yum/dnf | pacman
 
-| Distributions
+| 发行版
 | Debian, Ubuntu
 | Fedora, CentOS
 | Arch, Manjaro
 
-| Update system
+| 更新系统
 | apt-get upgrade
 | yum update
 | pacman -Su
 
-| Update system
-| apt-get upgrade
-| yum update
-| pacman -Su
-
-| Install new software from package repository
+| 从仓库安装
 | apt-get install pkg
 | yum install pkg
 | pacman -S pkg
 
-| Install new software from package file
+| 从文件安装
 | dpkg -i pkg
 | yum localinstall pkg
 | pacman -U pkg
 
-| Update existing software
+| 更新已有软件
 | apt-get install pkg
 | yum update pkg
 | pacman -S pkg
 
-| Remove unwanted software
+| 卸载指定软件
 | apt-get remove pkg
 | yum erase pkg
 | pacman -R pkg
 
-| Update package list
+| 更新软件源
 | apt-get update
 | yum check-update
 | pacman -Sy
 
-| List installed packages
+| 列出已安装的包
 | dpkg -l
 | rpm -qa
 | pacman -Q
 
-| List repositories
+| 列出仓库
 | cat /etc/apt/sources.list
 | yum repolist
 | cat /etc/pacman.conf
 
-| Add repository
+| 新增仓库
 | edit /etc/apt/sources.list
 | add repo to /etc/yum.repos.d/
 | edit /etc/pacman.conf
 
-| Remove repository
+| 删除仓库
 | edit /etc/apt/sources.list
 | remove repo from /etc/yum.repos.d/
 | edit /etc/pacman.conf
