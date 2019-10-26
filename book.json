@@ -1,8 +1,8 @@
 {
-  "title": "开发笔记",
-  "description": "开发笔记",
   "language": "zh-CN",
-  "author": "MurphyL - murphyl@outlook.com",
+  "structure": {
+    "readme": "INTRO.adoc"
+  },
   "variables": {
     "myVariable": "Hello World"
   }
