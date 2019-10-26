@@ -1,0 +1,12 @@
+{
+  "title": "开发笔记",
+  "description": "开发笔记",
+  "language": "zh-CN",
+  "author": "MurphyL - murphyl@outlook.com",
+  "plugins": [
+    "plantuml"
+  ],
+  "variables": {
+    "myVariable": "Hello World"
+  }
+}

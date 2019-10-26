@@ -1,0 +1,10 @@
+
+## 生成一个新的`SSH`密钥
+
+```text
+  ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+== 修改编辑器
+
+https://help.github.com/en/articles/associating-text-editors-with-git
