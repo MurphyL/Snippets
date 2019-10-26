@@ -1,6 +1,0 @@
-= Summary
-
-. link:java/core/README.adoc[Java开发笔记]
-.. link:java/spring/README.adoc[Spring应用笔记]
-.. link:java/maven/README.adoc[Maven]
-. Unfinished Chapter
