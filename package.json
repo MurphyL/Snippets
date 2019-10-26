@@ -1,0 +1,24 @@
+{
+  "name": "dev-notes",
+  "version": "1.0.0",
+  "description": "开发笔记",
+  "scripts": {
+    "serve": "gitbook serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MurphyL/dev-notes.git"
+  },
+  "author": "MurphyL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MurphyL/dev-notes/issues"
+  },
+  "homepage": "https://github.com/MurphyL/dev-notes#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
+  },
+  "dependencies": {
+    "gitbook-plugin-plantuml": "0.0.15"
+  }
+}
