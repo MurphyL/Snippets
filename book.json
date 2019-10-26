@@ -1,5 +1,6 @@
 {
   "language": "zh-CN",
+  "root": "src",
   "structure": {
     "readme": "INTRO.adoc"
   },
