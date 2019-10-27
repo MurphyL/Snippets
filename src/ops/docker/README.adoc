@@ -1,3 +1,67 @@
-=== Docker Compose
 
-Docker Compose 你只需要一个简单的配置文件就可以自定义你所需要的应用组件，包括容器、配置、网络链接和挂载卷。只需要一个简单的命令就可以启动和运行你的应用程序。
+
+=== Docker 安装 - Arch Linux
+
+```sh
+# 简单安装
+sudo pacman -S docker
+# Docker 会创建一个系统服务，用下面命令来启动 Docker：
+sudo systemctl start docker
+# 设置开机启动：
+sudo systemctl enable docker
+```
+
+=== 配置加速镜像
+
+创建或修改 /etc/docker/daemon.json：
+
+```sh
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+    "registry-mirrors": [
+        "https://1nj0zren.mirror.aliyuncs.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "http://f1361db2.m.daocloud.io",
+        "https://registry.docker-cn.com"
+    ]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
+
+=== 常用镜像
+
+|===
+|名称 |地址 |备注
+
+|Docker 中国官方镜像
+|https://registry.docker-cn.com
+|
+
+|Azure 中国镜像
+|https://dockerhub.azk8s.cn
+|
+
+|科大镜像站
+|https://docker.mirrors.ustc.edu.cn
+|
+
+|七牛云
+|https://reg-mirror.qiniu.com
+|
+
+|网易云
+|https://hub-mirror.c.163.com
+|
+
+|腾讯云
+|https://mirror.ccs.tencentyun.com
+|
+
+|===
+
+=== 其他
+
+*参考资料 - https://segmentfault.com/a/1190000019115546[Docker Hub 镜像加速器]
