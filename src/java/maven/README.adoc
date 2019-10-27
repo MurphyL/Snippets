@@ -1,0 +1,11 @@
+
+
+在settings.xml文件中的mirrors节点中添加如下内容：
+
+```xml
+<mirror>
+    <id>huaweicloud</id>
+    <mirrorOf>*</mirrorOf>
+    <url>https://mirrors.huaweicloud.com/repository/maven/</url>
+</mirror> 
+```

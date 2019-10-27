@@ -4,3 +4,4 @@
 * 开发工具 - https://www.jetbrains.com/idea/download/#section=windows[IntelliJ IDEA]
 * 开发文档 - https://www.docs4dev.com/zh[Doc4Dev]
 * 开发文档 - https://legacy.gitbook.com/book/leohxj/a-programmer-prepares/details[程序员的自我修养]
+* JDK国内镜像 - https://repo.huaweicloud.com/java/jdk/[华为开源镜像站 - Java]
