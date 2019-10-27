@@ -5,6 +5,7 @@
 
 * https://mirrors.huaweicloud.com/openjdk/[OpenJDK - 华为开源镜像站]
 * https://mirrors.huaweicloud.com/java/jdk/[Java JDK - 华为开源镜像站]
+* https://mirrors.tuna.tsinghua.edu.cn/apache/[Apache - 清华大学开源软件镜像站]
 * https://mirrors.huaweicloud.com/apache/maven/maven-3/[Maven 3 - 华为开源镜像站]
 * https://mirrors.huaweicloud.com/nodejs/[Node.js - 华为开源镜像站]
 * https://mirrors.huaweicloud.com/npm-software/[npm.js - 华为开源镜像站]
@@ -17,4 +18,4 @@
 
 * http://mirrors.neusoft.edu.cn/[We - 开源镜像站]
 * https://mirrors.huaweicloud.com/[华为开源镜像站]
-* https://mirrors.tuna.tsinghua.edu.cn/[开源软件镜像站]
+* https://mirrors.tuna.tsinghua.edu.cn/[清华大学开源软件镜像站]
