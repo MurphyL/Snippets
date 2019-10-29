@@ -1,3 +1,6 @@
+
+
+
 [source,java]
 .SpringValueAnnotationDemo.java
 ----
@@ -20,4 +23,12 @@ class SpringValueAnnotationDemo {
     @Value("#{${valuesMap}.?[value>'1']}")
     private Map<String, Integer> valuesMapFiltered;
 }
+----
+
+=== 其他
+
+[source,shell]
+.spring-boot-shell.sh
+----
+java -Dvm.option.a=val-a -jar demo.jar program-args
 ----

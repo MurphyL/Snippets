@@ -1,4 +1,23 @@
 
+=== 运行Java程序
+
+一个运行案例：
+
+[source,shell]
+.spring-boot-shell.sh
+----
+java -Dvm.option.a=val -jar demo.jar program.args=val
+----
+
+* vm.options可以通过System.getProperties()获取；
+* program.args可以通过main方法的args参数获取；
+
+==== Spring Boot
+
+* vm.options可以通过systemProperties获取；
+* program.args可以通过org.springframework.boot.ApplicationArguments来获取；
+* org.springframework.core.env.Environment；
+
 === 其他
 
 * 开发工具 - https://www.jetbrains.com/idea/download/#section=windows[IntelliJ IDEA]
