@@ -4,7 +4,7 @@
 一个运行案例：
 
 [source,shell]
-.spring-boot-shell.sh
+.java-app-shell.sh
 ----
 java -Dvm.option.a=val -jar demo.jar program.args=val
 ----

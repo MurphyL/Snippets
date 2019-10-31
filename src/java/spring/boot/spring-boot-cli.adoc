@@ -1,3 +1,11 @@
+=== Spring Boot CLI
+
+[source,shell]
+.spring-boot-cli.sh
+----
+java -Dvm.option.a=val -Dspring.config.location=/default.properties -jar demo.jar program.args=val --spring.config.location=classpath:/default.properties
+----
+
 === 启用Profile
 
 [source,shell]
