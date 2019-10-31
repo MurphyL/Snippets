@@ -1,0 +1,77 @@
+== Spring Config - 配置集中管理模块
+
+Spring Cloud Config为分布式系统中的外部配置提供服务器和客户端支持。使用Config Server，可以为所有环境中的应用程序管理其外部属性。
+
+=== Spring Cloud 各端特性
+
+==== Spring Cloud Config 服务端特性
+
+* 提供服务端和客户端支持
+* 集中管理各环境的配置文件
+* 配置文件修改之后，可以快速的生效
+* 可以进行版本管理
+* 支持大的并发查询
+* 支持各种语言
+
+=== 使用
+
+==== Server 端
+
+[source,xml]
+.pom.xml
+----
+<dependencies>
+	<!-- config server -->
+	<dependency>
+	    <groupId>org.springframework.cloud</groupId>
+	    <artifactId>spring-cloud-config-server</artifactId>
+	</dependency>
+	<!-- pull svn -->
+	<dependency>
+	    <groupId>org.tmatesoft.svnkit</groupId>
+	    <artifactId>svnkit</artifactId>
+	</dependency>
+</dependencies>
+----
+
+[source,java]
+.ConfigApplication.java
+----
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
+
+@EnableConfigServer
+@SpringBootApplication
+public class ConfigApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ConfigApplication.class, args);
+    }
+
+}
+----
+
+==== Client 端
+
+[source,xml]
+.pom.xml
+----
+<dependencies>
+    <!--config -->
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-config</artifactId>
+    </dependency>
+</dependencies>
+----
+
+[source,yaml]
+.application.yml
+----
+spring:
+  cloud:
+    config:
+      label: config-repo
+      uri: http://127.0.0.1:8766
+----

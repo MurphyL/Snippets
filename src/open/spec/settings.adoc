@@ -1,12 +1,12 @@
 == 配置文件
 
 * .editorconfig: 代码样式统一格式文件
-* .gitignore: Git忽略文件
-* .gitattributes: Git属性文件
+* .gitignore: Git 忽略文件
+* .gitattributes: Git 属性文件
 
 === CI
 
-* .travis.yml:
+* .travis.yml：TravisCI 文件
 
 === Java
 

@@ -1,3 +1,5 @@
+== Spring Boot/MVC导出文件的单元测试
+
 ---
 description: Spring Boot/MVC导出文件的单元测试
 ---
@@ -19,9 +21,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 /**
- * -
+ * JUnit - 测试Spring MVC文件导出
  *
- * @author luohao
+ * @author murph
  * @date 2019/6/20 13:42
  */
 public class ExcelExportControllerTest extends BaseSpringTest {

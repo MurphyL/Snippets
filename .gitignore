@@ -1,4 +1,9 @@
-/package-lock.json
-/.idea/
-/node_modules/
+# Gitbook
 /_book/
+
+# IDEA
+/.idea/
+
+# npm
+/package-lock.json
+/node_modules/
