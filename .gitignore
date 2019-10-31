@@ -2,6 +2,7 @@
 /_book/
 
 # IDEA
+/*.iml
 /.idea/
 
 # npm
