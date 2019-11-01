@@ -1,6 +1,8 @@
-== Docker - 应用笔记
+== Docker 应用笔记
 
-`Docker` 属于 `Linux` 容器的一种封装，提供简单易用的容器使用接口。它是目前最流行的 Linux 容器解决方案。
+`Docker` 属于 `Linux容器` 的一种封装，提供简单易用的容器使用接口。它是目前最流行的 Linux 容器解决方案。
+
+> Linux 容器（Linux Containers，缩写为 LXC）。Linux 容器不是模拟一个完整的操作系统，而是对进程进行隔离。或者说，在正常进程的外面套了一个保护层。对于容器里面的进程来说，它接触到的各种资源都是虚拟的，从而实现与底层系统的隔离。
 
 Docker 将应用程序与该程序的依赖，打包在一个文件里面。运行这个文件，就会生成一个虚拟容器。程序在这个虚拟容器里运行，就好像在真实的物理机上运行一样。有了 Docker，就不用担心环境问题。
 
@@ -12,11 +14,13 @@ Docker 将应用程序与该程序的依赖，打包在一个文件里面。运�
 * 提供弹性的服务——因为Docker容器可以随开随关，很适合动态扩容和缩容；
 * 组建微服务架构——通过多个容器，一台机器可以跑多个服务，因此在本机就可以模拟出微服务架构。
 
-=== Docker 安装 - Arch Linux
+=== Docker 安装
 
 [source,shell]
 ----
-# 简单安装
+# Debian/Ubuntu 安装
+sudo apt install docker
+# Arch Linux 安装
 sudo pacman -S docker
 # 启动 Docker
 sudo systemctl start docker
@@ -38,6 +42,8 @@ sudo systemctl enable docker
     ]
 }
 ----
+
+然后，重启Docker服务。
 
 [source,shell]
 ----

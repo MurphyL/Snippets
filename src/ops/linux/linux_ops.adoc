@@ -2,16 +2,27 @@
 title: Linux运维
 ```
 
-## CPU
+=== CPU
 
-## 硬盘
+[source,shell]
+----
+vmstat
+----
 
-```shell
+=== 硬盘
+
+[source,shell]
+----
 # 磁盘占用量
 df -m
 
 # 列出磁盘占用量最大的文件或者目录
 du -ahx / | sort -rh | head -20
-```
+----
 
-## 内存
+=== 内存
+
+[source,shell]
+----
+free -h
+----
