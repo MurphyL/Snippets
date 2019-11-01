@@ -28,4 +28,6 @@ cn=admin,dc=murphyl,dc=com
 
 === 其他
 
-* https://wiki.shileizcc.com/confluence/display/openldap/OpenLDAP[OpenLDAP]
+* http://www.openldap.org/[OpenLDAP]
+* http://www.bind9.net/ldap-tools[LDAP Software, LDAP Tools, LDAP Utilities]
+* https://wiki.shileizcc.com/confluence/display/openldap/OpenLDAP[OpenLDAP - 中文文档]
