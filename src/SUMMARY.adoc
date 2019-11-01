@@ -6,3 +6,4 @@
 .. link:ops/docker/README.adoc[Docker应用笔记]
 . link:open/spec/semver.adoc[语义化版本]
 . link:open/spec/settings.adoc[常见配置文件]
+. link:open/mirrors/README.adoc[国内镜像]
