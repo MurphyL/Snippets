@@ -7,9 +7,26 @@
 * 隔离性(Isolation)： 并发访问数据库时，一个用户的事物不被其他事务所干扰，各并发事务之间数据库是独立的；
 * 持久性(Durability)： 一个事务被提交之后。它对数据库中数据的改变是持久的，即使数据库 发生故障也不应该对其有任何影响。
 
-=== MySQL
-=== PostgresSQL
-=== Oracle
+=== 标准SQL的执行顺序
+
+[source,text]
+----
+(8) SELECT (9) DISTINCT (11) <Top Num> <select list>
+(1) FROM [left_table]
+(3) <join_type> JOIN <right_table>
+(2) ON <join_condition>
+(4) WHERE <where_condition>
+(5) GROUP BY <group_by_list>
+(6) WITH <CUBE | RollUP>
+(7) HAVING <having_condition>
+(10) ORDER BY <order_by_list>
+----
+
+=== 常见的关系型数据库
+
+* MySQL
+* PostgresSQL
+* Oracle
 
 == 非关系型数据库
 
