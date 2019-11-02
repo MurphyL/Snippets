@@ -22,4 +22,4 @@ psql -U postgres -h 192.168.100.172 -p 54321
 
 === 其他
 
-* 客户端开发工具 - https://www.postgresql.org/ftp/pgadmin/[pgAdmin]
+* https://wiki.postgresql.org/wiki/PostgreSQL_Clients[PostgreSQL Clients]
