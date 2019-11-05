@@ -1,3 +1,4 @@
 == Obscure but useful
 
-=== bc - 计算器
+* bc - 计算器
+* jq - JSON 处理工具
