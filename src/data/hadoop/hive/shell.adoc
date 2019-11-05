@@ -1,0 +1,38 @@
+== Beeline
+
+[source, shell]
+.beeline_test.sh
+----
+./beeline jdbc:hive2://127.0.0.1:10000/default;
+----
+
+== 运维
+
+[source, shell]
+.kill_hive_processes.sh
+----
+# 杀掉Hive相关进程
+jps | grep RunJar | awk '{print $1}' | xargs kill -9
+----
+
+[source, shell]
+.start_meta_store.sh
+----
+# 启动Hive MetaStore
+nohup $HIVE_HOME/bin/hive --service metastore > /dev/null 2>&1 &
+----
+
+[source, shell]
+.start_hive_server_v2.sh
+----
+# 启动HiveServer2
+nohup $HIVE_HOME/bin/hive --service hiveserver2 > /dev/null 2>&1 &
+----
+
+== 初始化元数据
+
+[source, shell]
+.schema_init.sh
+----
+$HIVE_HOME/bin/schematool -initSchema -dbType mysql
+----

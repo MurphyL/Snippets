@@ -1,0 +1,36 @@
+=== Spring Boot CLI
+
+[source,shell]
+.spring-boot-cli.sh
+----
+java -Dvm.option.a=val -Dspring.config.location=/default.properties -jar demo.jar program.args=val --spring.config.location=classpath:/default.properties
+----
+
+=== 启用Profile
+
+[source,shell]
+.spring-profiles.sh
+----
+-Dspring.profiles.active=dev
+----
+
+=== 内嵌服务器的配置
+
+[source,shell]
+.embedded-server-config.sh
+----
+--server.port=9090
+----
+
+=== 禁用自动配置
+
+[source,shell]
+.disable_autoconfig.java
+----
+@EnableAutoConfiguration(exclude={ClassNotToAutoconfigure.class})
+@SpringBootApplication(exclude={ClassNotToAutoconfigure.class})
+----
+
+=== 其他
+
+* https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-cli.html[Spring Boot CLI]

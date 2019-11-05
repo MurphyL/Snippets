@@ -1,0 +1,10 @@
+# Gitbook
+/_book/
+
+# IDEA
+/*.iml
+/.idea/
+
+# npm
+/package-lock.json
+/node_modules/

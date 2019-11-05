@@ -1,0 +1,8 @@
+= 开发笔记
+
+== 本地预览
+
+[source,shell]
+----
+npm run serve
+----

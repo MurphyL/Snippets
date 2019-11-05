@@ -1,0 +1,19 @@
+= Glossary
+
+== data
+数据处理相关
+
+== java
+Java语言相关
+
+== lang
+Java之外
+
+== open
+通用解决方案，各类开放平台接入
+
+== ops
+系统以
+
+== utils
+各类工具应用笔记

@@ -1,0 +1,20 @@
+== JDBC连接串
+[source, text]
+.raw_jdbc_url.txt
+----
+jdbc:hive2://<host1>:<port1>,<host2>:<port2>/dbName;
+----
+
+[source, text]
+.zookeeper_jdbc_url.txt
+----
+jdbc:hive2://<quorum>/dbName;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=namespace;
+----
+
+== JDBC参数
+
+[source, text]
+.zookeeper_jdbc_url.txt
+----
+initFile=<file>;session_var_list?hive_conf_list#hive_var_list
+----

@@ -1,0 +1,6 @@
+== 行专列
+[source, sql]
+.column_to_row.sql
+----
+SELECT group_concat('test_column')
+----

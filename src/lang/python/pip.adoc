@@ -1,0 +1,13 @@
+
+Pip的配置文件为用户根目录下的：~/.pip/pip.conf（Windows路径为：C:\Users\<UserName>\pip\pip.ini）, 您可以配置如下内容：
+
+```
+[global]
+index-url = https://mirrors.huaweicloud.com/repository/pypi/simple
+trusted-host = mirrors.huaweicloud.com
+timeout = 120 
+```
+
+=== 其他
+
+* https://mirrors.huaweicloud.com/repository/pypi/simple/[PIP - 华为开源镜像站]

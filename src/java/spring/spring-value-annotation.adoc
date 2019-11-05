@@ -1,0 +1,34 @@
+
+
+
+[source,java]
+.SpringValueAnnotationDemo.java
+----
+class SpringValueAnnotationDemo {
+    // 从“System property” 中读取
+    @Value("${priority}")
+    private String priority;
+    // 读取数组
+    @Value("${listOfValues}")
+    private String[] valuesArray;
+    // 从“System property” 中读取
+    @Value("#{systemProperties['priority']}")
+    private String spelValue;
+    @Value("#{systemProperties['priority'] : 'some default'}")
+    private String spelValueDefault;
+    // 如果key不存在则返回默认值
+    @Value("#{systemProperties['unknown'] ?: 'some default'}")
+    private String spelSomeDefaultNo;
+    // Map生成默认值
+    @Value("#{${valuesMap}.?[value>'1']}")
+    private Map<String, Integer> valuesMapFiltered;
+}
+----
+
+=== 其他
+
+[source,shell]
+.spring-boot-shell.sh
+----
+java -Dvm.option.a=val-a -jar demo.jar program-args
+----

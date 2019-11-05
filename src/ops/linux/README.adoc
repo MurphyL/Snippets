@@ -1,0 +1,10 @@
+=== 后台运行
+
+[source,shell]
+----
+nohup command > /dev/null 2>&1 &
+----
+
+=== 参考文档
+
+* https://www.linuxcool.com/[Linux命令大全(手册)]

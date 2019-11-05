@@ -1,0 +1,27 @@
+
+=== 运行Java程序
+
+一个运行案例：
+
+[source,shell]
+.java-app-shell.sh
+----
+java -Dvm.option.a=val -jar demo.jar program.args=val
+----
+
+* vm.options可以通过System.getProperties()获取；
+* program.args可以通过main方法的args参数获取；
+
+==== Spring Boot
+
+* vm.options可以通过systemProperties获取；
+* program.args可以通过org.springframework.boot.ApplicationArguments来获取；
+* org.springframework.core.env.Environment；
+
+=== 其他
+
+* 开发工具 - https://www.jetbrains.com/idea/download/#section=windows[IntelliJ IDEA]
+* 开发文档 - https://www.docs4dev.com/zh[Doc4Dev]
+* 开发文档 - https://legacy.gitbook.com/book/leohxj/a-programmer-prepares/details[程序员的自我修养]
+* 参考资料 - https://github.com/toutiaoio/awesome-architecture[架构师技术图谱]
+* JDK国内镜像 - https://repo.huaweicloud.com/java/jdk/[华为开源镜像站 - Java]
