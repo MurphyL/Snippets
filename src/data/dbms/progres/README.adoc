@@ -8,7 +8,6 @@
 === 安装
 
 [source, shell]
-.docker_install_postgres.sh
 ----
 # 安装PostgreSQL
 docker pull postgres
