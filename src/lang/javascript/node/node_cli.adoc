@@ -22,7 +22,6 @@
 - prerestart，postrestart
 
 
-
 === 设置镜像
 
 [source,shell]
