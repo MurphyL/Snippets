@@ -1,0 +1,7 @@
+== 静态站点生成器
+
+=== 其他
+
+* https://www.staticgen.com/[StaticGen - A List of Static Site Generators for JAMstack Sites]
+* https://app.netlify.com/[Netlify - Deploy your site in seconds]
+
