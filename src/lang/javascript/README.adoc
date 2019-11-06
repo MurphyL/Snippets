@@ -1,0 +1,4 @@
+
+=== 其他
+
+* http://www.ruanyifeng.com/blog/2013/09/finite-state_machine_for_javascript.html[阮一峰 - JavaScript与有限状态机]

@@ -1,0 +1,114 @@
+=== Lateral View
+
+Lateral View 与 explode()函数 结合使用可以将adid_list转换为单独的行：
+
+|===
+|pageid |adid_list
+
+|contact_page
+|[3, 4, 5]
+
+|front_page
+|[1, 2, 3]
+|===
+
+[source,sql]
+.lateral_view.sql
+----
+SELECT pageid, adid
+FROM tmp_laterview LATERAL VIEW explode(adid_list) adTable AS adid
+----
+
+语句结果集：
+
+|===
+|pageid |adid
+
+|front_page
+|1
+
+|front_page
+|2
+
+|front_page
+|3
+
+|contact_page
+|3
+
+|contact_page
+|4
+
+|contact_page
+|5
+|===
+
+=== Multiple Lateral Views
+
+FROM子句可以有多个LATERAL VIEW子句。 后面的LATERAL VIEWS子句可以引用出现在LATERAL VIEWS左侧表的任何列。
+
+|===
+|Array<int> pageid_list    |Array<string> adid_list
+| [1,2,3]
+| ["a","b","c"]
+
+| [3,4]
+| ["c","d"]
+
+|===
+
+[source,sql]
+.multiple_lateral_view.sql
+----
+SELECT * FROM exampleTable
+LATERAL VIEW explode(pageid_list) pageid_table AS pageid
+LATERAL VIEW explode(adid_list) adid_table AS adid
+----
+
+|===
+| pageid | adid
+
+|1
+|a
+
+|2
+|a
+
+|3
+|a
+
+|1
+|b
+
+|2
+|b
+
+|3
+|b
+
+|1
+|c
+
+|2
+|c
+
+|3
+|c
+
+|4
+|c
+
+|5
+|c
+
+|4
+|d
+
+|5
+|d
+
+|===
+
+=== 参考文档
+
+* Hive用户手册 - https://cwiki.apache.org/confluence/display/Hive/LanguageManual+LateralView[Lateral View]

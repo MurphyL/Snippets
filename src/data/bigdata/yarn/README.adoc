@@ -1,0 +1,16 @@
+[yarn-ops]
+== YARN运维
+
+[source, shell]
+.stop_yarn.sh
+----
+# 停止YARN服务
+$HADOOP_HOME/sbin/stop-yarn.sh
+----
+
+[source, shell]
+.start_yarn.sh
+----
+# 启动HDFS服务
+$HADOOP_HOME/sbin/start-yarn.sh
+----
