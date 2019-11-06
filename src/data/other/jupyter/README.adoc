@@ -1,8 +1,13 @@
+== Jupyter
+
+* Python
+* R
+* Julia
+
 === Docker安装
 
 
-
-.docker_install_postgres.sh
+[source,shell]
 ----
 # 安装
 docker pull jupyter/datascience-notebook

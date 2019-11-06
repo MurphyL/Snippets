@@ -1,0 +1,6 @@
+== 操作系统基础知识
+
+=== 其他
+
+* http://www.ruanyifeng.com/blog/2013/02/booting.html[阮一峰 - 计算机是如何启动的？]
+* http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html[阮一峰 - 进程与线程的一个简单解释]

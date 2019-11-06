@@ -300,4 +300,5 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 == 参考内容
 
-https://help.github.com/en/articles/associating-text-editors-with-git[修改编辑器]
+* https://help.github.com/en/articles/associating-text-editors-with-git[修改编辑器]
+* http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html[阮一峰 - 常用 Git 命令清单]
