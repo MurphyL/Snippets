@@ -1,0 +1,9 @@
+=== 切换中文
+
+[source,shell]
+----
+# 组
+https://t.me/zh_CN
+# 语言包
+https://t.me/setlanguage/classic-zh-cn
+----
