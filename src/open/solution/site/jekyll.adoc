@@ -1,5 +1,13 @@
 == Jekyll - 博客类型静态站点生成器
 
+=== WSL Debian 安装
+
+[source,shell]
+----
+sudo apt install ruby
+gem install jekyll
+----
+
 
 == 其他
 

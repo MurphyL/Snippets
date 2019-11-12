@@ -7,6 +7,7 @@ nohup command > /dev/null 2>&1 &
 
 === 参考文档
 
+* https://mirrors.tuna.tsinghua.edu.cn/help/debian/[开源软件镜像站]
 * https://www.linuxcool.com/[Linux命令大全(手册)]
 * http://www.pathname.com/fhs/[Filesystem Hierarchy Standard]
 * http://lists.busybox.net/pipermail/busybox/2010-December/074114.html[Understanding the bin, sbin, usr/bin , usr/sbin split]
