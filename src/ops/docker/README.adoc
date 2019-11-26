@@ -83,6 +83,16 @@ sudo systemctl restart docker
 
 |===
 
+=== 环境清理
+
+[source,shell]
+----
+docker kill $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi $(docker images -q)
+docker volume rm $(docker volume ls -q)
+----
+
 === 其他
 
 *参考资料 - https://segmentfault.com/a/1190000019115546[Docker Hub 镜像加速器]
